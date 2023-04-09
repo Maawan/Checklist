@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+html{
+    background-color: #e4e9f0;
+    background-image: -webkit-linear-gradient(65deg , #A683E3 50% , #E4E9FD 50%);
+    min-height: 100vh;
+    font-family: 'Ubuntu';
+    background-size:contain;
+}
+.headingContainer{
+    width: 450px;
+    color: #fff;
+    font-size: 30px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: bold;
+    background: #A683E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}   
+.headingContainer:hover{
+    background: #A68323;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0), 0 0px 0px 0 rgba(0, 0, 0, 0.1);
+}
+.headingContainer p{
+    display: inline;
+    
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+}
+.itemContainer{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 450px;
+    border-radius: 4px;
+    background-color: white;
+    /* border: 1px solid brown; */
+    margin-top: 30px;
+}
+
+.items{
+    display: flex;
+    color: #a682e3;
+    height: 50px;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    
+}
+.items p{
+    /* border: 2px solid blue; */
+    margin-left: 30px;
+}
+.items input{
+    margin-left: 20px;
+}
+.items input:checked+p{
+    text-decoration: line-through;
+    text-decoration-color: #a682e3;
+}
+.form{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+}
+.form input{
+    border: 0px;
+    flex: 5;
+    font-size: 20px;
+    color: #a682e3;
+    text-align: center;
+}
+.form input:focus{
+    outline: none;
+}
+.form button{
+    flex: 1;
+    margin: 3px;
+    
+    border-radius: 40px;
+    background-color: #a682e3;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+}
+.form button:focus{
+    border: none;
+    outline: none;
+    background-color: #A68323;
+}
+.form button:hover{
+    background-color: #c9b786;
+    
+}
