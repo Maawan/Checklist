@@ -1,0 +1,6 @@
+{
+    "version":2,
+    "name":"7_april",
+    "builds":[{"src":"server.js","use":"@versel/node"}],
+    "routes":[{"src":"/(.*)","dest":"/server.js"}]
+}
