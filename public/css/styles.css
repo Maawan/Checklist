@@ -31,6 +31,7 @@ html{
 .mainContainer{
     display: flex;
     justify-content: center;
+    transition: all 0.3s ease-in-out;
 }
 .itemContainer{
     transition: all 0.3s ease-in-out;

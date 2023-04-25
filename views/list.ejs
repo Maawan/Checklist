@@ -17,15 +17,17 @@
     <div class="mainContainer">
         <div class="itemContainer">
            <% for(let i = 0 ; i < tasks.length ; i++){ %>
+            <form action="/deleteItems" method="post">
                 <div class="items">   
-                    <input type="checkbox">
-                    <p><%=tasks[i]%></p>
+                    <input type="checkbox" name="checkBox" value="<%=tasks[i]._id+"$"+date%>"onChange="this.form.submit()">
+                    <p><%=tasks[i].name%></p>
                 </div>
+            </form>
            <% }  %>
             
             <form action="/insertTODO" method="post" class="form">
                 <input type="text" name="newItem" placeholder="Enter to your Checklist">
-                <button type="submit">+</button>
+                <button type="submit" name="list_name" value="<%= date %>">+</button>
             </form>
             
         </div>
