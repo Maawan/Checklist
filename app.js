@@ -6,7 +6,8 @@ app.set('view engine','ejs')
 const mongoose = require('mongoose')
 const { Template } = require('ejs')
 mongoose.connect('mongodb+srv://maawan-admin:maawan123@mydbserver.ntmdmxm.mongodb.net/?retryWrites=true&w=majority' , {
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useNewUrlParser : true
 })
 
 // 
